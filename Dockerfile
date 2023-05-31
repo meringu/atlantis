@@ -207,3 +207,6 @@ COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["server"]
+
+# Publish alpine as default from kaniko
+FROM alpine as final
